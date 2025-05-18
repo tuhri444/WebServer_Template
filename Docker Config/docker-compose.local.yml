@@ -1,0 +1,9 @@
+services:
+  nginx:
+    build:
+      context: "**/Nginx Config"
+      dockerfile: Dockerfile
+      args:
+        NGINX_ENV: local
+    ports:
+      - "80:80"

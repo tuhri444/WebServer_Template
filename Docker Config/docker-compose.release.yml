@@ -1,0 +1,10 @@
+services:
+  nginx:
+    build:
+      context: "**/Nginx Config"
+      dockerfile: Dockerfile
+      args:
+        NGINX_ENV: release
+    ports:
+      - "80:80"
+      - "443:443"

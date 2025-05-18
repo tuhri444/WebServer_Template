@@ -1,0 +1,20 @@
+version: '0.1'
+
+services:
+  nginx:
+    build:
+      context: "**/Nginx Config"
+      dockerfile: Dockerfile
+      args:
+        NGINX_ENV: development
+    ports:
+      - "80:80"
+  
+  frontend:
+    build:
+      context: "**/Docker Content/Frontend Server/"
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=development 
