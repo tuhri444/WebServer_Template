@@ -1,0 +1,8 @@
+- Setup both frontend and backend with dockerfiles
+- Docker content dockerignore file
+- Launch script with a 3 release channel installation wizard
+- Handle certificate generation automatically
+- Update specific container wizard
+- Allow Auto-deployment to VPS using SSH
+- integrate simple database server
+- handle vite dev and release
